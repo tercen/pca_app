@@ -1,0 +1,85 @@
+{
+  "kind": "ROperator",
+  "id": "785e3492dd9b54ee74788404b20e95a1",
+  "isDeleted": false,
+  "rev": "1-9918216e56886b8e23242d3428db1ec2",
+  "description": "Performs a principal components analysis on the given data",
+  "name": "PCA",
+  "createdBy": "alex",
+  "acl": {
+    "kind": "Acl",
+    "owner": "alex",
+    "aces": []
+  },
+  "createdDate": {
+    "kind": "Date",
+    "value": "2020-03-23T16:02:38.232685Z"
+  },
+  "lastModifiedDate": {
+    "kind": "Date",
+    "value": "2020-03-23T16:02:38.232685Z"
+  },
+  "urls": [
+    {
+      "kind": "Url",
+      "uri": "https://github.com/tercen/pca_operator"
+    }
+  ],
+  "tags": [
+    "multivariate statistics"
+  ],
+  "meta": [
+    {
+      "kind": "Pair",
+      "key": "copyOf",
+      "value": "a295f0378814eb465f74ffe4aa0c0b53"
+    }
+  ],
+  "url": {
+    "kind": "Url",
+    "uri": "https://github.com/tercen/pca_operator.git"
+  },
+  "version": "0.10.0",
+  "authors": [
+    "tercen"
+  ],
+  "isPublic": true,
+  "properties": [
+    {
+      "kind": "BooleanProperty",
+      "name": "scale",
+      "description": "A logical value indicating whether the variables should be scaled to have unit variance before the analysis takes place.",
+      "defaultValue": false
+    },
+    {
+      "kind": "BooleanProperty",
+      "name": "center",
+      "description": "A logical value indicating whether the variables should be shifted to be zero centered.",
+      "defaultValue": false
+    },
+    {
+      "kind": "EnumeratedProperty",
+      "name": "na.action",
+      "description": "A function which indicates what should happen when the data contain NAs.",
+      "defaultValue": "na.omit",
+      "values": [
+        "na.fail",
+        "na.omit"
+      ]
+    },
+    {
+      "kind": "DoubleProperty",
+      "name": "tol",
+      "description": "A value indicating the magnitude below which components should be omitted. Components are omitted if their standard deviations are less than or equal to tol times the standard deviation of the first component.",
+      "defaultValue": 0.0
+    },
+    {
+      "kind": "DoubleProperty",
+      "name": "maxComp",
+      "description": "Max number of components",
+      "defaultValue": 5.0
+    }
+  ],
+  "longDescription": null,
+  "path": "/data/operator/9c/ff/5f/5fff9c16-3e22-45e2-8233-6a7ee961c0ba/tercen-pca_operator-1ca0c06"
+}
