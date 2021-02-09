@@ -3,7 +3,7 @@
   "id": "06e8092baa06fe348efd79e91a002c84",
   "isDeleted": false,
   "rev": "17-d8af3b0da1d3f575c114607fc7cf007a",
-  "description": "",
+  "description": "Perform Principal Component Analysis",
   "name": "PCA",
   "createdBy": "alex",
   "acl": {
