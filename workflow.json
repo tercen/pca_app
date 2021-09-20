@@ -1,8 +1,8 @@
 {
   "kind": "Workflow",
-  "id": "06e8092baa06fe348efd79e91a002c84",
+  "id": "33fb64086c3295748ed979a87b22108a",
   "isDeleted": false,
-  "rev": "17-d8af3b0da1d3f575c114607fc7cf007a",
+  "rev": "8-e6027e29993eb945e19df7f5ed20a07a",
   "description": "Perform Principal Component Analysis",
   "name": "PCA",
   "createdBy": "alex",
@@ -13,23 +13,39 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-02-08T09:05:01.372050Z"
+    "value": "2021-09-20T12:46:10.408735Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2021-02-08T09:18:02.342142Z"
+    "value": "2021-09-20T12:54:03.695140Z"
   },
-  "urls": [],
+  "urls": [
+    {
+      "kind": "Url",
+      "uri": "https://github.com/tercen/pca-app"
+    }
+  ],
   "tags": [],
-  "meta": [],
+  "meta": [
+    {
+      "kind": "Pair",
+      "key": "workflow.app",
+      "value": ""
+    },
+    {
+      "kind": "Pair",
+      "key": "copyOf",
+      "value": "be64d92170ef75407a11534fba4d507b"
+    }
+  ],
   "url": {
     "kind": "Url",
-    "uri": ""
+    "uri": "https://github.com/tercen/pca-app"
   },
-  "version": "",
+  "version": "1.0.1",
   "authors": [],
   "isPublic": false,
-  "projectId": "556265acc1c77a293ca77bc34e0b5edb",
+  "projectId": "cd9edbea1c9fd2d33a6a50855a1ec8e4",
   "folderId": "",
   "links": [
     {
@@ -120,40 +136,27 @@
             {
               "kind": "XYAxis",
               "chart": {
-                "kind": "ChartHeatmap",
+                "kind": "ChartPoint",
                 "name": "",
                 "properties": {
                   "kind": "Properties",
                   "properties": [],
                   "propertyValues": []
-                }
+                },
+                "pointSize": 4
               },
               "colors": {
                 "kind": "Colors",
-                "factors": [
-                  {
-                    "kind": "Factor",
-                    "name": "measurement",
-                    "type": "double"
-                  }
-                ],
+                "factors": [],
                 "palette": {
-                  "kind": "JetPalette",
+                  "kind": "CategoryPalette",
                   "backcolor": 0,
                   "properties": [],
-                  "isUserDefined": false,
-                  "doubleColorElements": [
-                    {
-                      "kind": "DoubleColorElement",
-                      "color": -1,
-                      "stringValue": "-10.099999999999998"
-                    },
-                    {
-                      "kind": "DoubleColorElement",
-                      "color": -1,
-                      "stringValue": "45.099999999999994"
-                    }
-                  ]
+                  "colorList": {
+                    "kind": "ColorList",
+                    "name": ""
+                  },
+                  "stringColorElements": []
                 }
               },
               "errors": {
@@ -277,7 +280,7 @@
             "kind": "OperatorRef",
             "name": "PCA",
             "version": "0.10.0",
-            "operatorId": "785e3492dd9b54ee74788404b20e95a1",
+            "operatorId": "ca9abd4e342a540068e07e7939231435",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -379,8 +382,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 454.35765625,
-          "y": 364.5
+          "x": 455.35765625,
+          "y": 366.5
         }
       },
       "state": {
@@ -802,7 +805,7 @@
         "topLeft": {
           "kind": "Point",
           "x": 370.505,
-          "y": 166.5
+          "y": 167.5
         }
       },
       "state": {
@@ -830,7 +833,8 @@
                 "name": "measurement",
                 "type": "double"
               }
-            ]
+            ],
+            "isRequired": true
           },
           {
             "kind": "MappingFactor",
@@ -845,7 +849,8 @@
                 "name": "variable",
                 "type": "string"
               }
-            ]
+            ],
+            "isRequired": true
           },
           {
             "kind": "MappingFactor",
@@ -860,7 +865,8 @@
                 "name": "observation",
                 "type": "double"
               }
-            ]
+            ],
+            "isRequired": true
           },
           {
             "kind": "MappingFactor",
@@ -875,11 +881,14 @@
                 "name": "sex",
                 "type": "string"
               }
-            ]
+            ],
+            "isRequired": false
           }
         ],
         "filters": [],
-        "steps": []
+        "steps": [],
+        "defaultFactors": [],
+        "defaultFilters": []
       }
     },
     {
